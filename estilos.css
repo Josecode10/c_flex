@@ -1,1 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main {
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    /* border: 1px solid #808080; */
+}
+
+/* 1. Barra de navegación con distribución horizontal y menú alineado a la derecha. */
+.barra-navegacion {
+    display: flex;
+    justify-content: end;
+    padding: 30px;
+    background-color: #fff;
+    background-color: #D3D3D3;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.barra-navegacion a {
+    padding-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    height: 10%;
+}
+
+/* 2. Tarjeta de producto con imagen, descripción y botón distribuidos verticalmente. */
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    height: 100%;
+    align-content: space-around;
+    border: 1px solid #808080;
+    align-items: center;
+}
+
+.tarjeta-producto__imagen {
+    width: 85%;
+    padding: 5px;
+}
+
+/* 3. Galería de imágenes con filas que se ajusten al ancho del contenedor. */
+.main__tajeta-galeria {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    border: 1px solid #808080;
+}
+
+.galeria-imagenes {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #808080;
+}
+
+.galeria-imagenes__contenedor-imagen {
+    width: 30%;
+    height: 40%;
+}
+
+.contenedor-imagen__imagen {
+    width: 95%;
+    object-fit: contain;
+}
